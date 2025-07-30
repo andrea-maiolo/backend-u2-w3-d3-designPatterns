@@ -1,0 +1,21 @@
+Esercizio #3 (Chain of Responsibility)
+Realizzare le classi che modellano la seguente gerarchia militare (dal grado più basso al più alto):
+- Tenente
+- Capitano
+- Maggiore
+- Colonnello
+- Generale
+Valgono le seguenti regole:
+- Ogni ufficiale conosce il proprio responsabile.
+- Ogni ufficiale svolge una funzione diversa
+- Ogni ufficiale ha uno stipendio diverso
+- Ogni ufficiale è collocato gerarchicamente in modo diverso
+Gli ufficiali percepiscono i seguenti stipendi:
+- Tenente: 1000
+- Capitano: 2000
+- Maggiore: 3000
+- Colonnello: 4000
+- Generale: 5000
+
+Si realizzi un’applicazione utilizzando il pattern "Chain of responsibility",
+che dato un importo verifichi quale ufficiale percepisce almeno tale importo.
