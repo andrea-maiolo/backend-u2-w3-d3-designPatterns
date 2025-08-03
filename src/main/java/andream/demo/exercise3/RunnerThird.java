@@ -1,9 +1,11 @@
 package andream.demo.exercise3;
 
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 @Component
+@Order(3)
 public class RunnerThird implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
@@ -31,7 +33,7 @@ public class RunnerThird implements CommandLineRunner {
         System.out.println("\nRichiesta stipendio >= " + richiesta2);
         tenente.chiPrendeX(richiesta2);
 
-        int richiesta3 = 6000;
+        int richiesta3 = 300;
         System.out.println("\nRichiesta stipendio >= " + richiesta3);
         tenente.chiPrendeX(richiesta3);
 

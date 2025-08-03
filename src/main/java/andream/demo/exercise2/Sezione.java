@@ -1,6 +1,5 @@
 package andream.demo.exercise2;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -9,7 +8,7 @@ import java.util.List;
 
 @Getter
 @Setter
-@AllArgsConstructor
+
 public class Sezione implements Libro {
     private List<Libro> sottoSezioni = new ArrayList<>();
 
@@ -28,6 +27,11 @@ public class Sezione implements Libro {
             totale += sottoSezioni.get(i).numbPagine();
         }
         return totale;
+    }
+
+
+    public void addSezione(Libro roba) {
+        this.sottoSezioni.add(roba);
     }
 }
 
